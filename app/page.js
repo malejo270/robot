@@ -1,0 +1,1 @@
+export default function Home(){return <main style={{maxWidth:800,margin:'60px auto',padding:24}}><h1>Bot de Ventas Marketplace</h1><p>Webhook: <code>/api/webhook</code></p><p>Estado: funcionando.</p></main>}

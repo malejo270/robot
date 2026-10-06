@@ -1,0 +1,2 @@
+export const catalogo=[{id:'producto-1',nombre:'Audífonos Bluetooth X',descripcion:'Audífonos Bluetooth X.',estado:'Nuevo',precio:120000,precio_minimo:100000,stock:10,especificaciones:['Bluetooth','Estuche de carga'],garantia:'6 meses',envio_nacional:15000}];
+export function buscarProducto({titulo='',mensaje=''}){const texto=`${titulo} ${mensaje}`.toLowerCase();return catalogo.find(p=>{const n=p.nombre.toLowerCase();return texto.includes(n)||n.split(' ').some(w=>w.length>=5&&texto.includes(w));})||null;}
